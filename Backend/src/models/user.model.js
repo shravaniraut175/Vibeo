@@ -19,8 +19,7 @@ const userSchema = new mongoose.Schema({
     profileImage: {
         type: String,
         default: "https://ik.imagekit.io/smartnova/default_profile_img.webp?updatedAt=1777892176565"
-    },
-    followers
+    }
 })
 
 const userModel = mongoose.model("users", userSchema)
