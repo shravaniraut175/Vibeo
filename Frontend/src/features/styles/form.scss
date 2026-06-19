@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .form-container{
+        height: fit-content;
+        min-width: 400px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h1{
+            text-align: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            input, button{
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                padding: 1.2rem;
+                font-size: medium;
+            }
+
+            button{
+                background-color:rgb(245, 30, 66);
+                color: rgb(243, 243, 243);
+                cursor: pointer;
+            }
+
+            button:hover{
+                scale: 0.99;
+            }
+        }
+
+        .toggleInForm{
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(245, 30, 66);
+            font-weight: 600
+        }
+    }
+}
